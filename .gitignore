@@ -1,0 +1,32 @@
+# Entorno virtual: se recrea con requirements.txt
+.venv/
+
+# Caché de Python
+__pycache__/
+*.pyc
+
+# Documentos: manuales internos, no se publican
+data/raw/
+
+# Texto extraído / OCR: se puede regenerar desde data/raw
+data/processed/
+
+# Modelos de idioma de Tesseract (se descargan, pesan ~27 MB)
+tessdata/
+
+# Base de vectores (etapa 3): se puede regenerar
+chroma_db/
+
+# Todo lo que depende de documentos privados (se versionan solo las plantillas *.ejemplo.json)
+eval/resultados/
+eval/feedback.jsonl
+eval/preguntas.json
+eval/casos_diagnostico.json
+src/config_local.py
+NOTAS_privado.md
+
+# Secretos (API key de Claude)
+.env
+
+# VS Code
+.vscode/

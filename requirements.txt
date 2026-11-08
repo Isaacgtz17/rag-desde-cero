@@ -1,0 +1,20 @@
+# Dependencias del proyecto RAG. Crece por etapa: cada librería entra cuando la usamos.
+
+# --- Etapa 1/2: carga de documentos ---
+pymupdf          # Abrir PDFs y convertir cada página a imagen
+pytesseract      # Puente de Python hacia Tesseract (el OCR real es el .exe de Windows)
+pillow           # Manejo de imágenes; pytesseract recibe imágenes PIL
+
+# --- Etapa 2: RAG mínimo ---
+numpy                  # Similitud coseno = multiplicación de matrices
+sentence-transformers  # Carga el modelo de embeddings (instala torch)
+anthropic              # SDK oficial para llamar a Claude
+python-dotenv          # Lee la API key desde el archivo .env
+streamlit              # Interfaz web mínima (se pule en la etapa 6)
+
+# --- Etapa 3: persistencia ---
+chromadb               # Base vectorial en disco con filtros por metadatos
+
+# --- Etapa 4: mejor recuperación ---
+rank-bm25              # BM25 (búsqueda por palabras clave) para la búsqueda híbrida
+# (el reranker CrossEncoder ya viene en sentence-transformers)

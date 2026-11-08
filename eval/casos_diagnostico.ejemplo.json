@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "¿Qué significa cada etapa del proceso de ventas?",
+    "fuente": "manual_ventas.md",
+    "debe_contener": ["| Nuevo |", "| Perdido |"]
+  },
+  {
+    "pregunta": "¿Cómo restablezco mi contraseña?",
+    "fuente": "manual_portal.pdf",
+    "debe_contener": ["Olvidé mi contraseña"]
+  }
+]

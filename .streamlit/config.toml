@@ -1,0 +1,9 @@
+# Configuración de Streamlit para este proyecto.
+
+[runner]
+# "Magic" muestra en pantalla cualquier expresión suelta del script. Lo apagamos:
+# preferimos mostrar solo lo que pedimos explícitamente con st.* (más predecible).
+magicEnabled = false
+
+[browser]
+gatherUsageStats = false

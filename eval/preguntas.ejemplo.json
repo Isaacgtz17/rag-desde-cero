@@ -1,0 +1,29 @@
+[
+  {
+    "id": "q01",
+    "pregunta": "Si olvidé mi contraseña del portal, ¿cómo la cambio?",
+    "respuesta_esperada": "En la pantalla de inicio se da clic en 'Olvidé mi contraseña', se escribe el correo y se sigue el enlace que llega (vigente 30 minutos).",
+    "fuente": "manual_portal.pdf",
+    "debe_contener": ["Olvidé mi contraseña", "vigente 30 minutos"],
+    "tipo": "pasos",
+    "vocabulario_distinto": false
+  },
+  {
+    "id": "q02",
+    "pregunta": "¿Qué puede ver alguien con rol de solo lectura?",
+    "respuesta_esperada": "El rol Consulta ve el tablero y los reportes, pero no puede crear ni editar registros.",
+    "fuente": "manual_ventas.md",
+    "debe_contener": ["| Consulta |"],
+    "tipo": "rol",
+    "vocabulario_distinto": true
+  },
+  {
+    "id": "q03",
+    "pregunta": "¿Cuándo pagan el aguinaldo?",
+    "respuesta_esperada": "No está en los manuales.",
+    "fuente": null,
+    "debe_contener": [],
+    "tipo": "fuera_de_alcance",
+    "vocabulario_distinto": false
+  }
+]
